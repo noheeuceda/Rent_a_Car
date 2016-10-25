@@ -1,8 +1,30 @@
 <?php
+	
+	include_once("class_gerente.php");
 
-	class Gerente{
+	class Gerente extends Persona{
 
 		private $contraseña;
+
+		public function __construct($nombre,
+					$apellido,
+					$numero_identidad,
+					$tratamiento,
+					$edad,
+					$nacionalidad,
+					$correo,
+					$telefono,
+					$contraseña){
+			parent::($nombre,
+					$apellido,
+					$numero_identidad,
+					$tratamiento,
+					$edad,
+					$nacionalidad,
+					$correo,
+					$telefono);
+			$this->contraseña = $contraseña;
+		}
 
 		public function getContraseña(){
 			return $this->contraseña;
@@ -11,7 +33,7 @@
 			$this->contraseña = $contraseña;
 		}
 		public function toString(){
-			return "Contraseña: " . $this->contraseña;
+			return parent::toString() . ", Contraseña: " . $this->contraseña;
 		}
 	}
 ?>

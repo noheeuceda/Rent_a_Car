@@ -1,6 +1,8 @@
 <?php
 
-	class Automovil{
+	include_once("class_automovil.php");
+
+	abstract class Automovil{
 
 		private $modelo;
 		private $extras;
@@ -69,13 +71,13 @@
 			$this->tipo = $tipo;
 		}
 		public function toString(){
-			return "Modelo: " . $this->modelo . 
+			return "Modelo: " . $this->modelo->toString() . 
 				" Extras: " . $this->extras . 
 				" Kilometraje: " . $this->kilometraje . 
 				" Combustible: " . $this->combustible . 
 				" Estado: " . $this->estado . 
 				" Placa: " . $this->placa;
-				" Tipo: " . $this->tipo;
+				" Tipo: " . $this->tipo->toString();
 		}
 	}
 ?>

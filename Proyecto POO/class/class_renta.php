@@ -1,11 +1,22 @@
 <?php
 
+	include_once("class_renta.php");
 	class Renta{
 
 		private $sucursal_entrega;
 		private $sucursal_devolucion;
 		private $fecha_entrega;
 		private $fecha_devolucion;
+
+		public function __construct($sucursal_entrega,
+					$sucursal_devolucion,
+					$fecha_entrega,
+					$fecha_devolucion){
+			$this->sucursal_entrega = $sucursal_entrega;
+			$this->sucursal_devolucion = $sucursal_devolucion;
+			$this->fecha_entrega = $fecha_entrega;
+			$this->fecha_devolucion = $fecha_devolucion;
+		}
 
 		public function getSucursal_entrega(){
 			return $this->sucursal_entrega;

@@ -1,284 +1,281 @@
-<?php
-	include_once("class/class_producto.php");
-	include_once("class/class_aplicacion.php");
-	include_once("class/class_icono.php");
-	include_once("class/class_usuario.php");
-	include_once("class/class_desarrollador.php");
-	include_once("class/class_comentario.php");
-
-	$iconos[]=new Icono("http://localhost/playstore_solucion/img/icono1.png",100,100);
-	$iconos[]=new Icono("http://localhost/playstore_solucion/img/icono2.png",100,100);
-	$iconos[]=new Icono("http://localhost/playstore_solucion/img/icono3.png",100,100);
-	$iconos[]=new Icono("http://localhost/playstore_solucion/img/icono4.png",100,100);
-	$iconos[]=new Icono("http://localhost/playstore_solucion/img/icono5.png",100,100);
-
-
-	$comentarios[] = new Comentario("Comentario 1",new Usuario("Usuario1","usuario1@gmail.com"),"DEscripcion comentario 1","12-12-2012");
-	$comentarios[] = new Comentario("Comentario 2",new Usuario("Usuario2","usuario2@gmail.com"),"DEscripcion comentario 2","12-12-2012");
-	$comentarios[] = new Comentario("Comentario 3",new Usuario("Usuario3","usuario3@gmail.com"),"DEscripcion comentario 3","12-12-2012");
-	$comentarios[] = new Comentario("Comentario 4",new Usuario("Usuario4","usuario4@gmail.com"),"DEscripcion comentario 4","12-12-2012");
-	$comentarios[] = new Comentario("Comentario 5",new Usuario("Usuario5","usuario5@gmail.com"),"DEscripcion comentario 5","12-12-2012");
-
-
-	$desarrolladores[] = new Desarrollador("Desarrollador 1", "desarrollador1@gmail.com","http://desarrollador.com");
-	$desarrolladores[] = new Desarrollador("Desarrollador 2", "desarrollador1@gmail.com","http://desarrollador.com");
-	$desarrolladores[] = new Desarrollador("Desarrollador 3", "desarrollador1@gmail.com","http://desarrollador.com");
-	$desarrolladores[] = new Desarrollador("Desarrollador 4", "desarrollador1@gmail.com","http://desarrollador.com");
-	$desarrolladores[] = new Desarrollador("Desarrollador 5", "desarrollador1@gmail.com","http://desarrollador.com");
-	
-	$categorias[] = "Categoria 1";
-	$categorias[] = "Categoria 2";
-	$categorias[] = "Categoria 3";
-	$categorias[] = "Categoria 4";
-	$categorias[] = "Categoria 5";
-	
-	$estatus[] = "Estatus 1";
-	$estatus[] = "Estatus 2";
-	$estatus[] = "Estatus 3";
-	$estatus[] = "Estatus 4";
-	$estatus[] = "Estatus 5";
-
-	$aplicaciones[] = new Aplicacion("Aplicacion 1",
-					"Descripcion aplicacion 1",
-					"12-12-2012" ,
-					4,
-					$comentarios,
-					"C:\wamp\www\unidad 1\playstore_solucion\imgaplicacion1.apk",
-					2342,
-					$iconos[0],
-					$categorias[0],
-					$estatus[0],
-					"1.0",
-					"12-12-2012",
-					$desarrolladores[0]);
-
-	$aplicaciones[] = new Aplicacion("Aplicacion 2",
-					"Descripcion aplicacion 2",
-					"12-12-2012" ,
-					4,
-					$comentarios,
-					"http://localhost/playstore_solucion/apks/aplicacion2.apk",
-					2342,
-					$iconos[1],
-					$categorias[1],
-					$estatus[1],
-					"1.0",
-					"12-12-2012",
-					$desarrolladores[1]);
-
-	$aplicaciones[] = new Aplicacion("Aplicacion 3",
-					"Descripcion aplicacion 3",
-					"12-12-2012" ,
-					5,
-					$comentarios,
-					"http://localhost/playstore_solucion/apks/aplicacion3.apk",
-					2342,
-					$iconos[2],
-					$categorias[2],
-					$estatus[2],
-					"1.0",
-					"12-12-2012",
-					$desarrolladores[2]);
-
-	$aplicaciones[] = new Aplicacion("Aplicacion 4",
-					"Descripcion aplicacion 4",
-					"12-12-2012" ,
-					3,
-					$comentarios,
-					"http://localhost/playstore_solucion/apks/aplicacion4.apk",
-					2342,
-					$iconos[3],
-					$categorias[3],
-					$estatus[3],
-					"1.0",
-					"12-12-2012",
-					$desarrolladores[3]);
-
-	$aplicaciones[] = new Aplicacion("Aplicacion 5",
-					"Descripcion aplicacion 5",
-					"12-12-2012" ,
-					2,
-					$comentarios,
-					"http://localhost/playstore_solucion/apks/aplicacion5.apk",
-					2342,
-					$iconos[4],
-					$categorias[4],
-					$estatus[4],
-					"1.0",
-					"12-12-2012",
-					$desarrolladores[4]);
-?>
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-	<meta charset="utf-8">
-	<title>Oh no, Examen práctico</title>
-	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>EasyCar Rent a Car</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
+
 <body>
-	<div class="alert alert-success" role="alert">
-		<!-- Imprimir en esta seccion las verificaciones.-->
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-6">
-				<!--- INICIO DEL FORMULARIO -->
-				<form action="index.php" method="GET">
-					<table class = "table table-striped table-hover">
-						<tr>
-							<td>Nombre aplicación:</td>
-							<td>
-								<input type="text" name="txt-nombre" id="txt-nombre" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td>Descripción:</td>
-							<td>
-								<input type="text" name="txt-descripcion" id="txt-descripcion" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td>Fecha de publicación:</td>
-							<td>
-								<input type="text" name="txt-fecha" id="txt-fecha" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td>Calificación promedio:</td>
-							<td>
-								<input type="text" name="txt-calificacion" id="txt-calificacion" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td>URL:</td>
-							<td>
-								<input type="text" name="txt-url" id="txt-url" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td>Tamaño archivo:</td>
-							<td>
-								<input type="text" name="txt-tamano" id="txt-tamano" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td>Icono:</td>
-							<td>
-								<select name="slc-icono" id="slc-icono" class="form-control">
-									<?php 
-									for ($i=0;$i<count($iconos);$i++)
-										echo '<option value="'.$iconos[$i]->getURLImagen().'">'.$iconos[$i]->getURLImagen().'</option>';
-									?>		
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td>Categorias:</td>
-							<td>
-								<?php
-									for($i=0;$i<count($categorias);$i++)
-										echo '<label><input type="checkbox" name="chk-categorias[]" id="categorias[]" 
-										value="'.$categorias[$i].'">'.$categorias[$i].'</label><br>';
-								
-								?>
-							</td>
-						</tr>
-						<tr>
-							<td>Version:</td>
-							<td>
-								<input type="text" name="txt-version" id="txt-version" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td>Fecha de actualización:</td>
-							<td>
-								<input type="text" name="txt-fechaActualizacion" id="txt-fechaActualizacion" class="form-control">
-							</td>
-						</tr>
-						<tr>
-							<td>Desarrollador:</td>
-							<td>
-								<select name="slc-desarrollador" id="slc-desarrollador" class="form-control">
-									<?php 
-										for ($i=0;$i<count($desarrolladores);$i++)
-											echo '<option value="'.$desarrolladores[$i]->getNombreUsuario().'">'.$desarrolladores[$i]->getNombreUsuario().'</option>';
-									?>	
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<button  id="btn-guardar" 
-								class="btn btn-primary"  data-loading-text="Guardando..." autocomplete="off">Guardar</button>
-								<button id="btn-obtener-informacion" class="btn btn-danger"  
-								data-loading-text="Obteniendo informacion..." autocomplete="off">Obtener informacion</button>
-								<img id="img-loading" src="img/loading.gif" style="display:none;">
-							</td>
-						</tr>
-					</table>
-				</form>
-				<!--- FIN DEL FORMULARIO -->
-			</div>
-			<!--Listado de las aplicaciones-->
-			
-		</div>
-	</div>
-	<br><br>
-	<hr>
-	
-	<script src="js/jquery.min.js"></script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">EasyCar</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#sobre-nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#terminos">Terminos y Condiciones</a>
+                    </li>
+                    <li>
+                        <a href="#contactenos">Contactenos</a>
+                    </li>
+                    <li>
+                        <a href="#login">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+     <table>
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>EasyCar</h1>
+                        <h3>Renta tu carro a precios bajos</h3>
+                        <div class="container-fluid">
+                        <hr class="intro-divider">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <!--- INICIO DEL FORMULARIO -->
+                                    <tr>
+                                        <td>Sucursal Entrega:</td>
+                                        <td>
+                                            <select name="slc-suc-entrega" id="slc-suc-entrega" class="form-control">
+                                                <?php 
+                                                $sucursales[]='Oficinas, Tegucigalpa';
+                                                $sucursales[]='Aereopuerto Toncontin, Tegucigalpa';
+                                                $sucursales[]='Aereopuerto Ramón Villeda, San Pedro Sula';
+                                                $sucursales[]='Oficinas, San Pedro Sula';
+                                                for ($i=0;$i<count($sucursales);$i++)
+                                                    echo '<option value="'.$sucursales[$i].'">'.$sucursales[$i].'</option>';
+                                                ?>      
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hora y Fecha Entrega:</td>
+                                        <td>
+                                            <input type="text" name="" id="txt-descripcion" class="form-control">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sucursal Devolución:</td>
+                                        <td>
+                                            <select name="slc-suc-entrega" id="slc-suc-entrega" class="form-control">
+                                            <?php
+                                                for ($i=0;$i<count($sucursales);$i++)
+                                                    echo '<option value="'.$sucursales[$i].'">'.$sucursales[$i].'</option>';
+                                                ?> 
+                                            </select>    
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sucursal Devolución:</td>
+                                        <td>
+                                            <input type="text" name="" id="txt-calificacion" class="form-control">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Categorias:</td>
+                                        <td>
+                                            <?php
+                                                $categorias[] = 'Turismo';
+                                                $categorias[] = 'Bus';
+                                                $categorias[] = 'Camioneta';
+                                                $categorias[] = 'Pick-Up';
+                                                for($i=0;$i<count($categorias);$i++)
+                                                    echo '<label><input type="radio" name="rbt-categorias" value="'.$categorias[$i].'">'.$categorias[$i].'</label>';
+                                            ?>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <button id="btn-guardar" class="btn btn-primary"> Hacer Reserva</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--- FIN DEL FORMULARIO -->
+                            </div>    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+	<a  name="services"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Conoce nuestras sucursales</h2>
+                    <h4>Hay una cerca de donde la necesitas<br></h4>
+                    <p class="lead">Direcciones y numeros telefonicos de cada una de ellas <a target="_blank" href="http://join.deathtothestockphoto.com/">click aqui</a></p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/aeropuerto.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Nuestra increíble flota<br></h2>
+                    <h4><br></h4>
+                    <p class="lead">Seguridad, comodidad, elegancia y ajustado a tu presupesto<br> <a target="_blank" href="http://www.psdcovers.com/">Conocela</a></p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/flota.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Forma de pago<br></h2>
+                    <p class="lead">Nos adecuamos a tu manera de pago<br> <a target="_blank" href="http://www.google.com/fonts">Formas de pago</a>.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/pagoselectronicos.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+	<a  name="contact"></a>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>EasyCar, tu solución apropiada en el tiempo adecuado</h2>
+                </div>
+                <div class="col-lg-6">
+                    
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#sobre-nosotros">Sobre Nosotros</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#">Terminos y Condiciones</a>
+                        </li>                       
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contactenos">Contactenos</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#login">Login</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; EasyCar 2016. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <div id="div-respuesta" class="well"></div>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script>
-		$(document).ready(function(){
 
-			$("#btn-guardar").click(function(){
-				
-				$("#btn-guardar").button("loading");
-				$("#img-loading").fadeIn(200);
-				var parametros = "txt-nombre= "+$("#txt-nombre").val()+"&"+"txt-descripcion="+$("#txt-descripcion").val()+"&"+"txt-fecha="+$("#txt-fecha").val()+"&"+
-				"txt-calificacion="+$("#txt-calificacion").val()+"&"+"txt-url="+$("#txt-url").val()+"&"+"txt-tamano="+$("#txt-tamano").val()+"&"+
-				"slc-icono="+$("#slc-icono").val()+"&"+"txt-version="+$("#txt-version").val()+"&"+"txt-fechaActualizacion="+$("#txt-fechaActualizacion").val()+"&"+
-				"slc-desarrollador="+$("#slc-desarrollador").val(); 
-				//URL?parametro1=valor1&parametro2=valor2&.....parametroN=valorN
-				alert("Informacion que se enviara: " + parametros);
-				$.ajax({
-					url:"ajax/procesar.php?accion=guardar",
-					method:"POST",
-					data: parametros,
-					success:function(respuesta){
-						
-						$("#img-loading").fadeOut(200);
-						$("#btn-guardar").button("reset");
-						$("#div-respuesta").html(respuesta);
-
-					},
-					error:function(){
-						alert("Ocurrio un error.");
-					}
-				});	
-			});
-			$("#btn-obtener-informacion").click(function(){
-				$("#btn-obtener-informacion").button("loading");
-				$("#img-loading").fadeIn(200);
-				$.ajax({
-					url:"ajax/procesar.php?accion=obtener",
-					method:"POST",
-					success:function(respuesta){
-						$("#img-loading").fadeOut(200);
-						$("#btn-obtener-informacion").button("reset");
-						$("#div-respuesta").html(respuesta);
-					},
-					error:function(){
-						alert("Ocurrio un error.");
-					}
-				});	
-			});			
-		});
-	</script>
 </body>
+
 </html>

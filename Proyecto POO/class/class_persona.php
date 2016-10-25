@@ -1,5 +1,6 @@
 <?php
 
+	include_once("class_persona.php");
 	abstract class Persona{
 
 		protected $nombre;
@@ -10,6 +11,24 @@
 		protected $nacionalidad;
 		protected $correo;
 		protected $telefono;
+
+		public function __construct($nombre,
+					$apellido,
+					$numero_identidad,
+					$tratamiento,
+					$edad,
+					$nacionalidad,
+					$correo,
+					$telefono){
+			$this->nombre = $nombre;
+			$this->apellido = $apellido;
+			$this->numero_identidad = $numero_identidad;
+			$this->tratamiento = $tratamiento;
+			$this->edad = $edad;
+			$this->nacionalidad = $nacionalidad;
+			$this->correo = $correo;
+			$this->telefono = $telefono;
+		}
 
 		public function getNombre(){
 			return $this->nombre;
