@@ -58,7 +58,8 @@
                         <a href="#contactenos">Contactenos</a>
                     </li>
                     <li>
-                        <a href="#login">Login</a>
+                    <a href="#"  onclick = window.open('http://localhost/SignUp/','ventana','width=640,height=480,scrollbars=NO,menubar=NO,resizable=NO,titlebar=NO,status=NO');return false>Log In/Sing Up</a>
+
                     </li>
                 </ul>
             </div>
@@ -68,10 +69,7 @@
     </nav>
 
 
-    <!-- Header -->
-     <table>
-    <a name="about"></a>
-    <div class="intro-header">
+    <!-- Header --><a name="about"></a><div class="intro-header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -83,63 +81,8 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <!--- INICIO DEL FORMULARIO -->
-                                    <tr>
-                                        <td>Sucursal Entrega:</td>
-                                        <td>
-                                            <select name="slc-suc-entrega" id="slc-suc-entrega" class="form-control">
-                                                <?php 
-                                                $sucursales[]='Oficinas, Tegucigalpa';
-                                                $sucursales[]='Aereopuerto Toncontin, Tegucigalpa';
-                                                $sucursales[]='Aereopuerto Ramón Villeda, San Pedro Sula';
-                                                $sucursales[]='Oficinas, San Pedro Sula';
-                                                for ($i=0;$i<count($sucursales);$i++)
-                                                    echo '<option value="'.$sucursales[$i].'">'.$sucursales[$i].'</option>';
-                                                ?>      
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Hora y Fecha Entrega:</td>
-                                        <td>
-                                            <input type="text" name="" id="txt-descripcion" class="form-control">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sucursal Devolución:</td>
-                                        <td>
-                                            <select name="slc-suc-entrega" id="slc-suc-entrega" class="form-control">
-                                            <?php
-                                                for ($i=0;$i<count($sucursales);$i++)
-                                                    echo '<option value="'.$sucursales[$i].'">'.$sucursales[$i].'</option>';
-                                                ?> 
-                                            </select>    
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sucursal Devolución:</td>
-                                        <td>
-                                            <input type="text" name="" id="txt-calificacion" class="form-control">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Categorias:</td>
-                                        <td>
-                                            <?php
-                                                $categorias[] = 'Turismo';
-                                                $categorias[] = 'Bus';
-                                                $categorias[] = 'Camioneta';
-                                                $categorias[] = 'Pick-Up';
-                                                for($i=0;$i<count($categorias);$i++)
-                                                    echo '<label><input type="radio" name="rbt-categorias" value="'.$categorias[$i].'">'.$categorias[$i].'</label>';
-                                            ?>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">
-                                            <button id="btn-guardar" class="btn btn-primary"> Hacer Reserva</button>
-                                        </td>
-                                    </tr>
-                                </table>
+                                    </div></div></div></div></div></div></div></div>
+
                                 <!--- FIN DEL FORMULARIO -->
                             </div>    
                     </div>
