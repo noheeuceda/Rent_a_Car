@@ -55,7 +55,7 @@
                         <a href="#terminos">Terminos y Condiciones</a>
                     </li>
                     <li>
-                        <a href="#contactenos">Contactenos</a>
+                        <a href="#"  onclick = window.open('http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/formularioUsuario.php','ventana','width=640,height=480,scrollbars=NO,menubar=NO,resizable=NO,titlebar=NO,status=NO');return false>Reserva Aquí</a>
                     </li>
                     <li>
                         <a href="#"  onclick = window.open('http://localhost/SignUp/','ventana','width=640,height=480,scrollbars=NO,menubar=NO,resizable=NO,titlebar=NO,status=NO');return false>Log In/Sing Up</a>
@@ -199,7 +199,7 @@
                         </li>                       
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#contactenos">Contactenos</a>
+                            <a href="#contactenos">Renta Aqui</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
