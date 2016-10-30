@@ -55,10 +55,10 @@
                         <a href="#terminos">Terminos y Condiciones</a>
                     </li>
                     <li>
-                        <a href="#"  onclick = window.open('http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/formularioUsuario.php','ventana','width=640,height=480,scrollbars=NO,menubar=NO,resizable=NO,titlebar=NO,status=NO');return false>Reserva Aquí</a>
+                        <a target="_blank" href="formularioUsuario.php">Reserva Aqui</a>
                     </li>
                     <li>
-                        <a href="#"  onclick = window.open('http://localhost/SignUp/','ventana','width=640,height=480,scrollbars=NO,menubar=NO,resizable=NO,titlebar=NO,status=NO');return false>Log In/Sing Up</a>
+                        <a target="_blank" href='SignUp/'>Log In/Sing Up</a>
                     </li>
                 </ul>
             </div>
@@ -129,7 +129,7 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Nuestra increíble flota<br></h2>
                     <h4><br></h4>
-                    <p class="lead">Seguridad, comodidad, elegancia y ajustado a tu presupesto<br> <a href="#"  onclick = window.open('http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/flota.php','flota','width=900,height=600,scrollbars=NO,menubar=NO,resizable=NO,titlebar=NO,status=NO');return false>Conocela</a>
+                    <p class="lead">Seguridad, comodidad, elegancia y ajustado a tu presupesto<br> <a href="flota.php">Conocela</a>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="img/flota.jpg" alt="">
@@ -199,7 +199,7 @@
                         </li>                       
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#contactenos">Renta Aqui</a>
+                            <a href="#contactenos">Reserva Aqui</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>

@@ -39,7 +39,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/flota.php">Flota Easy Car </a>
+                <a class="navbar-brand" href="flota.php">Flota Easy Car </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -68,11 +68,12 @@
             <div class="col-md-3">
                 <p class="lead">Shop Name</p>
                 <div class="list-group">
-                    <a href="http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/flota2.php"  class="list-group-item"  >categoria 1</a>
-                    <a href="http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/flota3.php" class="list-group-item">Category 2</a>
-                    <a href="http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/flota4.php" class="list-group-item">Category 3</a>
+                    <a href="flota2.php"  class="list-group-item"  >categoria 1</a>
+                    <a href="flota3.php" class="list-group-item">Category 2</a>
+                    <a href="flota4.php" class="list-group-item">Category 3</a>
                 </div>
             </div>
+            <br><br><br><br>
 
             <div class="col-md-9">
 
@@ -88,15 +89,15 @@
                             <div class="carousel-inner" role="listbox">
 
                                 <div class="item active">
-                                    <img class="slide-image" src="http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/img/chevrolet.jpg" alt="Flota">
+                                    <img class="slide-image" src="img/chevrolet.jpg" alt="Flota">
                                 </div>
 
                                 <div class="item">
-                                    <img class="slide-image" src="http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/img/mitsubishi.jpg" alt="Flota2">
+                                    <img class="slide-image" src="img/mitsubishi.jpg" alt="Flota2">
                                 </div>
 
                                 <div class="item">
-                                    <img class="slide-image" src="http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/img/honda.jpg" alt="">
+                                    <img class="slide-image" src="img/honda.jpg" alt="">
                                 </div>
 
                             </div>
@@ -113,12 +114,13 @@
                     </div>
 
                 </div>
+                <br><br><br><br>
 
                 <div class="row">
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/img/leaf.jpg" alt="">
+                            <img src="img/leaf.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$24.99</h4>
                                 <h4><a href="#">Nissan Leaf</a>
@@ -140,7 +142,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/img/fluence.jpg" alt="">
+                            <img src="img/fluence.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$64.99</h4>
                                 <h4><a href="#">Renault Fluence</a>
@@ -162,7 +164,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/img/goltrack.jpg" alt="">
+                            <img src="img/goltrack.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$74.99</h4>
                                 <h4><a href="#">Volkswagen Goltrack</a>
@@ -184,7 +186,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/img/accent.jpg" alt="">
+                            <img src="img/accent.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$84.99</h4>
                                 <h4><a href="#">Hyundai Accent</a>
@@ -206,7 +208,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/img/duster.jpg" alt="">
+                            <img src="img/duster.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$94.99</h4>
                                 <h4><a href="#">Renault Duster</a>
@@ -229,7 +231,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://localhost/GitHub/Rent_a_Car/Proyecto%20POO/img/accent.jpg" alt="">
+                            <img src="img/accent.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$84.99</h4>
                                 <h4><a href="#">Hyundai Accent</a>
@@ -266,7 +268,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright © Your Website 2014</p>
+                    <p>Copyright © EasyCar 2016</p>
                 </div>
             </div>
         </footer>
