@@ -36,7 +36,7 @@
 
 <div class="container">
 
-    <form class="well form-horizontal" action=" " method="post" id="contact_form">
+    <form class="well form-horizontal" action="#" method="post" name="contact_form" id="contact_form" onsubmit="return comprobar()">
         <fieldset>
 
         <!-- Form Name -->
@@ -49,7 +49,7 @@
           <div class="col-md-4 inputGroupContainer">
           <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-          <input name="first_name" placeholder="Primer Nombre" class="form-control" type="text">
+          <input name="first_name" id="first_name" placeholder="Primer Nombre" class="form-control" type="text">
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@
             <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-          <input name="last_name" placeholder="Appellido" class="form-control" type="text">
+          <input name="last_name" id="last_name" placeholder="Appellido" class="form-control" type="text">
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@
             <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-          <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+          <input name="email" id="email" placeholder="E-Mail Address" class="form-control" type="text">
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
             <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-          <input name="phone" placeholder="(504)9999-1212" class="form-control" type="text">
+          <input name="phone" id="phone" placeholder="(504)9999-1212" class="form-control" type="text">
             </div>
           </div>
         </div>
@@ -97,19 +97,29 @@
             <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-          <input name="address" placeholder="Dirección" class="form-control" type="text">
+          <input name="address" id="adress" placeholder="Dirección" class="form-control" type="text">
             </div>
           </div>
         </div>
 
         <!-- Text input-->
          
-        <div class="form-group">
+
+
+<div class="form-group">
+          <label class="col-md-4 control-label">Fecha Recogida</label>  
+            <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+          <input name="city" id="city" placeholder="DD/MM/YY" class="form-control" type="text">
+            </div>
+          </div>
+        </div><div class="form-group">
           <label class="col-md-4 control-label">Ciudad</label>  
             <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-          <input name="city" placeholder="Ciudad" class="form-control" type="text">
+          <input name="city" id="city" placeholder="Ciudad" class="form-control" type="text">
             </div>
           </div>
         </div>
@@ -121,7 +131,7 @@
             <div class="col-md-4 selectContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-            <select name="state" class="form-control selectpicker">
+            <select name="state" id="state" class="form-control selectpicker">
               <option value=" ">Selecciona tu estado</option>
               <option>Francisco Morazan</option>
               <option>Tegucigalpa</option>
@@ -137,7 +147,7 @@
             <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-          <input name="zip" placeholder="Zip Code" class="form-control" type="text">
+          <input name="zip" id="zip" placeholder="Zip Code" class="form-control" type="text">
             </div>
         </div>
         </div>
@@ -155,7 +165,7 @@
             <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                  <textarea class="form-control" name="comment" placeholder="Dejanos saber tus necesidades y comentarios"></textarea>
+                  <textarea class="form-control" name="comment" id="comment" placeholder="Dejanos saber tus necesidades y comentarios"></textarea>
           </div>
           </div>
         </div>
@@ -163,149 +173,103 @@
         <!-- Success message -->
         <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Gracias por preferirnos.</div>
 
+
+
         <!-- Button -->
         <div class="form-group">
           <label class="col-md-4 control-label"></label>
           <div class="col-md-4">
-            <button type="submit" class="btn btn-warning">Enviar <span class="glyphicon glyphicon-send"></span></button>
+            <button type="submit" id="submit" class="btn btn-warning">Enviar <span class="glyphicon glyphicon-send"></span></button>
           </div>
         </div>
 
+
+
         </fieldset>
-      </form>
+      
 </div>
           
           <!-- /.container -->
 
-      
-          <script src='js/jquery.min.js'>
+ </form>
+          <script type="text/javascript" src="js/jquery.min.js"></script>
+          <script type="text/javascript" src="js/bootstrap.min.js"></script>
+          <script>
 
+          function comprobar()
+                {
+                   var nombre = document.contact_form.first_name.value;
+                   var nombre2 = document.contact_form.last_name.value;
+                   var email = document.contact_form.email.value;
+                   var phone = document.contact_form.phone.value;
+                   var address = document.contact_form.address.value;
+                   var city = document.contact_form.city.value;
+                   var state = document.contact_form.state.value;
+                   var zip = document.contact_form.zip.value;
+                   var comment = document.contact_form.comment.value;
 
+                   if (nombre.length > 30)
+                   {
+                      alert("Tu nombre es demasiado grande. Redúcelo.");
+                      return false;
+                   }
 
-              $(document).ready(function() {
-                  $('#contact_form').bootstrapValidator({
-                      // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
-                      feedbackIcons: {
-                          valid: 'glyphicon glyphicon-ok',
-                          invalid: 'glyphicon glyphicon-remove',
-                          validating: 'glyphicon glyphicon-refresh'
-                      },
-                      fields: {
-                          first_name: {
-                              validators: {
-                                      stringLength: {
-                                      min: 2,
-                                  },
-                                      notEmpty: {
-                                      message: 'Por favor introduzca su primer nombre'
-                                  }
-                              }
-                          },
-                           last_name: {
-                              validators: {
-                                   stringLength: {
-                                      min: 2,
-                                  },
-                                  notEmpty: {
-                                      message: 'Por favor introduzca su apellido'
-                                  }
-                              }
-                          },
-                          email: {
-                              validators: {
-                                  notEmpty: {
-                                      message: 'Por favor introduzca su E-Mail'
-                                  },
-                                  emailAddress: {
-                                      message: 'Por favor introduzca una dirección valida'
-                                  }
-                              }
-                          },
-                          phone: {
-                              validators: {
-                                  notEmpty: {
-                                      message: 'Por favor introduzca su número telefónico'
-                                  },
-                                  phone: {
-                                      country: 'Hn',
-                                      message: 'Por favor introduzca un número valido con su código de Area'
-                                  }
-                              }
-                          },
-                          address: {
-                              validators: {
-                                   stringLength: {
-                                      min: 8,
-                                  },
-                                  notEmpty: {
-                                      message: 'Por favor introduzca su direccion'
-                                  }
-                              }
-                          },
-                          city: {
-                              validators: {
-                                   stringLength: {
-                                      min: 4,
-                                  },
-                                  notEmpty: {
-                                      message: 'Por favor introduzca su ciudad'
-                                  }
-                              }
-                          },
-                          state: {
-                              validators: {
-                                  notEmpty: {
-                                      message: 'Por favor seleccione un estado/región'
-                                  }
-                              }
-                          },
-                          zip: {
-                              validators: {
-                                  notEmpty: {
-                                      message: 'Por favor introduzca el código zip'
-                                  },
-                                  zipCode: {
-                                      country: 'Hn',
-                                      message: 'Por favor introduzca un código zip valido'
-                                  }
-                              }
-                          },
-                          comment: {
-                              validators: {
-                                    stringLength: {
-                                      min: 10,
-                                      max: 200,
-                                      message:'Por favor introduzca al menos 10 caracteres y no más de 200'
-                                  },
-                                  notEmpty: {
-                                      message: 'Por favor introduzca una descripción'
-                                  }
-                                  }
-                              }
-                          }
-                      })
+                   if (nombre.length <= 0)
+                   {
+                      alert("Debes escribir tu Nombre");
+                      return false;
+                   }
+                   
+                   if (nombre2.length <=0)
+                   {
+                      alert("Debes escribir tu Appellido");
+                      return false;
+                   }
 
-                      .on('success.form.bv', function(e) {
-                          $('#success_message').slideDown({ opacity: "show" }, "slow")
-                              $('#contact_form').data('bootstrapValidator').resetForm();
+                   if (email.length <=0)
+                   {
+                      alert("Debes escribir tu Dirección E-Mail");
+                      return false;
+                   }
 
-                
-                          e.preventDefault();
+                   if (phone.length <=0)
+                   {
+                      alert("Debes escribir tu número Telefónico");
+                      return false;
+                   }
 
-                          var $form = $(e.target);
+                   if (address.length <=0)
+                   {
+                      alert("Debes escribir tu Dirección");
+                      return false;
+                   }
 
+                   if (city.length <=0)
+                   {
+                      alert("Debes escribir tu Ciudad");
+                      return false;
+                   }
 
-                          var bv = $form.data('bootstrapValidator');
+                   if (state.length <=0)
+                   {
+                      alert("Debes Seleccionar un Estado");
+                      return false;
+                   }
 
+                   if (zip.length <=0)
+                   {
+                      alert("Debes escribir el código zip");
+                      return false;
+                   }
 
-                          $.post($form.attr('action'), $form.serialize(), function(result) {
-                              console.log(result);
-                          }, 'json');
-                      });
-              });
+                   if (comment.length >=200)
+                   {
+                      alert("Tu comentario debe tener máximo 200 caracteres");
+                      return false;
+                   }
+                   
+                   return true;
+                }
           </script>
-
-    </form>
-
   </body>
 </html>
