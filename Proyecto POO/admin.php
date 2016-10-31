@@ -24,14 +24,35 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Reservaciones <span class="sr-only">(current)</span></a></li>
-	        <li><a href="#">Existencia <span class="sr-only">(current)</span></a></li>
+	        <li class="active"><a href="#">Flota <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#">Link</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clientes <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a id="btn-accion" href="#"></a></li>
+	            <li><a href="#">Reservaciones</a></li>
+	            <li><a href="#"></a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Oficinas</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#"></a></li>
+	          </ul>
+	        </li>
 	      </ul>
+	      <form class="navbar-form navbar-left">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit</button>
+	      </form>
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="#">Settings</a></li>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cuenta <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
+	            <li><a href="#">Administrar Empleados</a></li>
+	            <li><a href="#">Administrar Cuenta</a></li>
+	            <li role="separator" class="divider"></li>
 	            <li><a href="#">Cerrar Cesión</a></li>
 	          </ul>
 	        </li>
@@ -40,66 +61,93 @@
 	  </div><!-- /.container-fluid -->
 	</nav>
 
+
+	<div class="alert alert-success" role="alert">
+		<!-- Imprimir en esta seccion las verificaciones.-->
+	</div>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-6">
 				<!--- INICIO DEL FORMULARIO -->
 			
 				<table class = "table table-striped table-hover">
-					<table class = "table table-striped table-hover">
 					<tr>
-						<td>Sucursal:</td>
+						<td>Marca Automovil:</td>
 						<td>
-							<select name="" id="slc-sucursal" class="form-control">
-								
+							<input type="text" name="marca" id="marca-automovil" class="form-control">
+						</td>
+					</tr>
+					<tr>
+						<td>:</td>
+						<td>
+							<input type="text" name="" id="txt-descripcion" class="form-control">
+						</td>
+					</tr>
+					<tr>
+						<td>Fecha de publicación:</td>
+						<td>
+							<input type="text" name="" id="txt-fecha-publicacion" class="form-control">
+						</td>
+					</tr>
+					<tr>
+						<td>Calificación promedio:</td>
+						<td>
+							<input type="text" name="" id="txt-calificacion" class="form-control">
+						</td>
+					</tr>
+					<tr>
+						<td>URL:</td>
+						<td>
+							<input type="text" name="" id="txt-url" class="form-control">
+						</td>
+
+					</tr>
+					<tr>
+						<td>Tamaño archivo:</td>
+						<td>
+							<input type="text" name="" id="txt-tamanio" class="form-control">
+						</td>
+
+					</tr>
+					<tr>
+						<td>Icono:</td>
+						<td>
+							<select name="" id="slc-icono" class="form-control">
+									
 							</select>
 						</td>
 					</tr>
-					<tr>					
-						<td>Cliente:</td>
+					<tr>
+					
+						<td>Categorias:</td>
 						<td>
-							<input type="text" name="" id="txt-cliente" class="form-control">
+							
 						</td>
 					</tr>
 					<tr>
-						<td>Tipo de Carro:</td>
+						<td>Version:</td>
 						<td>
-							<select name="" id="slc-auto" class="form-control">
+							<input type="text" name="" id="txt-version" class="form-control">
+						</td>
+					</tr>
+					<tr>
+						<td>Fecha de actualización:</td>
+						<td>
+							<input type="text" name="" id="txt-fecha-actualizacion" class="form-control">
+						</td>
+					</tr>
+					<tr>
+						<td>Desarrollador:</td>
+						<td>
+							<select name="" id="slc-desarrollador" class="form-control">
 								
 							</select>
 						</td>
-					</tr>
-					<tr>
-						<td>Tiempo de reserva:</td>
-						<td>
-							<input type="text" name="" id="txt-tiempo-reserva" class="form-control">
-						</td>
-					</tr>
-					<tr>
-						<td>Dia Reserva:</td>
-						<td>
-							<input type="text" name="" id="txt-dia-reserva" class="form-control">
-						</td>
-
-					</tr>
-					<tr>
-						<td>Dia Entrega:</td>
-						<td>
-							<input type="text" name="" id="txt-dia-entrega" class="form-control">
-						</td>
-
-					</tr>
-					<tr>
-						<td>Extras:</td>
-						<td>
-							<input type="text" name="" id="txt-extras" class="form-control">
-						</td>
-
 					</tr>
 					<tr>
 						<td colspan="2">
-							<button id="btn-enviar" class="btn btn-primary">
-								Enviar
+							<button id="btn-guardar" class="btn btn-primary">
+								Guardar
 							</button>
 							<button id="btn-limpiar" class="btn btn-warning">
 								Limpiar
@@ -111,7 +159,7 @@
 			</div>
 			<!--Listado de las aplicaciones-->
 			<div class="col-lg-6">
-				<div class="row" id="div-comprobacion-reserva">
+				<div class="row" id="div-lista-aplicaciones">
 					
 				</div>
 			</div>
@@ -122,11 +170,12 @@
 	
 	<script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/accion_admin.js"></script>
+    <script src="js/controlador.js"></script>
     <script type="text/javascript">
-    	$("#btn-enviar").click(function(evento){
+    	$("#btn-accion").click(function(evento){
     		//En caso de que el boton sea un anchor <a>
     		evento.preventDefault();
+    		alert("Acccion");
     	});
 
     </script>

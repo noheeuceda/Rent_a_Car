@@ -41,7 +41,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        
+                        <a href="index.php">Página Principal</a>
                     </li>
                     <li>
                         
@@ -65,8 +65,8 @@
                 <p class="lead">Shop Name</p>
                 <div class="list-group">
                     <a href="flota2.php" class="list-group-item">categoria 1</a>
-                    <a href="flota3.php" class="list-group-item">Category 2</a>
-                    <a href="flota4.php" class="list-group-item">Category 3</a>
+                    <a href="flota3.php" class="list-group-item">Categoria 2</a>
+                    <a href="flota4.php" class="list-group-item">Categoria 3</a>
                 </div>
             </div>
 
@@ -83,10 +83,10 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="img/leaf.jpg" alt="">
+                            <img src="img/kiario.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$24.99</h4>
-                                <h4><a href="#">Nissan Leaf</a>
+                                <h4><a href="#">Kia Rio</a>
                                 </h4>
                                 <p>Descripción Aquí</p>
                             </div>
@@ -127,12 +127,12 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="img/goltrack.jpg" alt="">
+                            <img src="img/dodgeram.png" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$74.99</h4>
-                                <h4><a href="#">Volkswagen Goltrack</a>
+                                <h4><a href="#">Dodge RAM</a>
                                 </h4>
-                                <p>Un automovil compacto perfecto para un recorrido por la ciudad.</p>
+                                <p>Descripción aquí</p>
                             </div>
                             <div class="ratings">
                                 <p class="pull-right">31 reviews</p>
@@ -171,10 +171,10 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="img/duster.jpg" alt="">
+                            <img src="img/kiasorento.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$94.99</h4>
-                                <h4><a href="#">Renault Duster</a>
+                                <h4><a href="#">Kia Sorento</a>
                                 </h4>
                                 <p>Descripción aquí</p>
                             </div>
@@ -194,10 +194,10 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="img/accent.jpg" alt="">
+                            <img src="img/l2004x4.jpg" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$84.99</h4>
-                                <h4><a href="#">Hyundai Accent</a>
+                                <h4><a href="#">L200 4X4</a>
                                 </h4>
                                 <p>Descripción aquí</p>
                             </div>

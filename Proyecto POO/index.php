@@ -68,7 +68,7 @@
     </nav>
 
 
-    <a name="about"></a><div class="intro-header">
+    <!-- Header --><a name="about"></a><div class="intro-header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -76,13 +76,14 @@
                         <h1>EasyCar</h1>
                         <h3>Renta tu carro a precios bajos</h3>
                         <div class="container-fluid">
+                        <hr class="intro-divider">
                         <div class="row">
                             <div class="col-lg-6">
-                               
-                            </div></div>
+                                <!--- INICIO DEL FORMULARIO -->
+                                    </div></div></div></div></div></div></div></div>
 
-                                
-                        </div>    
+                                <!--- FIN DEL FORMULARIO -->
+                            </div>    
                     </div>
                 </div>
             </div>
@@ -131,7 +132,7 @@
                     <p class="lead">Seguridad, comodidad, elegancia y ajustado a tu presupesto<br> <a href="flota.php">Conocela</a>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/flota.jpg" alt="">
+                    <img class="img-responsive" src="img/flotaAutos.jpg" alt="">
                 </div>
             </div>
 

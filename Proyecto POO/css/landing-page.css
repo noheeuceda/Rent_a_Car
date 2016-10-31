@@ -36,13 +36,13 @@ h6 {
     padding-bottom: 5px;
     text-align: left;
     color: #f8f8f8;
-    background: url(../img/landing.jpg) no-repeat ;
+    background: url(../img/autos2.jpg) no-repeat ;
     background-size: cover;
 }
 
 .intro-message {
     position: left;
-    padding-top: 10%;
+    padding-top: 20%;
     padding-bottom: 20%;
 }
 
