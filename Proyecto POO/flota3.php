@@ -41,7 +41,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.php">Página Principal</a>
+                        
                     </li>
                     <li>
                         
@@ -64,9 +64,9 @@
             <div class="col-md-3">
                 <p class="lead">Shop Name</p>
                 <div class="list-group">
-                    <a href="flota2.php" class="list-group-item">categoria 1</a>
-                    <a href="flota3.php" class="list-group-item">Categoria 2</a>
-                    <a href="flota4.php" class="list-group-item">Categoria 3</a>
+                    <a href="flota2.php" class="list-group-item">Categoria </a>
+                    <a href="flota3.php" class="list-group-item">Category 2</a>
+                    <a href="flota4.php" class="list-group-item">Category 3</a>
                 </div>
             </div>
 
