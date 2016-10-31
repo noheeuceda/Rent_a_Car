@@ -5,7 +5,7 @@
 	abstract class Automovil{
 
 		private $modelo;
-		private $extras;
+		private $extras; //quitar
 		private $kilometraje;
 		private $combustible;
 		private $estado;

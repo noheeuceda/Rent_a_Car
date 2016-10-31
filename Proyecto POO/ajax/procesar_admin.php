@@ -7,10 +7,6 @@
 					echo "Sucursal: ". $_POST["slc-sucursal"]."<br>";
 				else 
 					echo "No hay sucursal<br>";
-				if (isset($_POST["slc-cajero"]))
-					echo "Cajero: ". $_POST["slc-cajero"]."<br>";
-				else 
-					echo "No hay cajero<br>";
 				if (isset($_POST["txt-cliente"]))
 					echo "Cliente: ". $_POST["txt-cliente"]."<br>";
 				else 
@@ -34,18 +30,12 @@
 				if (isset($_POST["txt-extras"]))
 					echo "Extras: ". $_POST["txt-extras"]."<br>";
 				else 
-					echo "No hay Extras<br>";
-				if (isset($_POST["txt-total"]))
-					echo "Total: ". $_POST["txt-total"]."<br>";
-				else 
-					echo "No hay Total<br>";
-				
-
+					echo "No hay Extras<br>";			
 			break;
 					
 
 		case '2':
-			echo "Se imprime factura";
+			echo "Se imprime reserva";
 			break;
 		default:
 			echo "Accion invalida";

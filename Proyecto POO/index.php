@@ -68,7 +68,7 @@
     </nav>
 
 
-    <!-- Header --><a name="about"></a><div class="intro-header">
+    <a name="about"></a><div class="intro-header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -76,14 +76,13 @@
                         <h1>EasyCar</h1>
                         <h3>Renta tu carro a precios bajos</h3>
                         <div class="container-fluid">
-                        <hr class="intro-divider">
                         <div class="row">
                             <div class="col-lg-6">
-                                <!--- INICIO DEL FORMULARIO -->
-                                    </div></div></div></div></div></div></div></div>
+                               
+                            </div></div>
 
-                                <!--- FIN DEL FORMULARIO -->
-                            </div>    
+                                
+                        </div>    
                     </div>
                 </div>
             </div>

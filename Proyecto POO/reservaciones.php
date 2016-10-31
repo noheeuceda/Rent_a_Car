@@ -24,13 +24,13 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Flota <span class="sr-only">(current)</span></a></li>
+	        <li class="active"><a href="#gerente.php">Flota <span class="sr-only">(current)</span></a></li>
 	        <li><a href="oficinas.php">Oficinas</a></li>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clientes <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
 	            <li><a id="btn-accion" href="#"></a></li>
-	            <li><a href="reservaciones.php">Reservaciones</a></li>
+	            <li><a href="#">Reservaciones</a></li>
 	            <li role="separator" class="divider"></li>
 	            <li><a href="#">Estadisticas</a></li>
 
@@ -64,60 +64,73 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-6">
-				 <button type="button"  class="btn btn-default" data-dismiss="modal" href="#" data-toggle="modal" data-target="#agregar">Agregar Auto</button>
-				 <button type="button" id="eliminarAuto" class="btn btn-default" data-dismiss="modal" href="#" data-toggle="modal" data-target="#eliminar">Eliminar Auto</button>
+				 <button type="button"  class="btn btn-default" data-dismiss="modal" href="#" data-toggle="modal" data-target="#agregar">Agregar Reservacion</button>
+				 <button type="button" id="eliminarAuto" class="btn btn-default" data-dismiss="modal" href="#" data-toggle="modal" data-target="#eliminar">Eliminar Reservacion</button>
 
 				<div id="agregar" class="modal fade" tabindex="-1" role="dialog">
 				  <div class="modal-dialog" role="document">
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title">Agregar Carro</h4>
+				        <h4 class="modal-title">Agregar reservacion</h4>
 				      </div>
 				      <div class="modal-body">
-				        <table class = "table table-striped table-hover">
+				     <table class = "table table-striped table-hover">
+					<table class = "table table-striped table-hover">
 					<tr>
-						<td>Marca:</td>
+						<td>Sucursal:</td>
 						<td>
-							<input type="text" name="marca" id="txt-marca-auto" class="form-control">
+							<select name="" id="slc-sucursal" class="form-control">
+								
+							</select>
+						</td>
+					</tr>
+					<tr>					
+						<td>Cliente:</td>
+						<td>
+							<input type="text" name="" id="txt-cliente" class="form-control">
 						</td>
 					</tr>
 					<tr>
-						<td>Modelo:</td>
+						<td>Tipo de Carro:</td>
 						<td>
-							<input type="text" name="" id="txt-modelo" class="form-control">
-						</td>
-					</tr>
-					<tr>
-						<td>Tipo Auto:</td>
-						<td>
-							<select name="" id="slc-tipo-auto" class="form-control">
-									
+							<select name="" id="slc-auto" class="form-control">
+								
 							</select>
 						</td>
 					</tr>
 					<tr>
-						<td>Tipo transmision:</td>
+						<td>Tiempo de reserva:</td>
 						<td>
-							<select name="" id="slc-tipo-trans" class="form-control">
-									
-							</select>
+							<input type="text" name="" id="txt-tiempo-reserva" class="form-control">
 						</td>
 					</tr>
 					<tr>
-						<td>Placa:</td>
+						<td>Dia Reserva:</td>
 						<td>
-							<input type="text" name="" id="txt-placa" class="form-control">
+							<input type="text" name="" id="txt-dia-reserva" class="form-control">
 						</td>
 
 					</tr>
-					
+					<tr>
+						<td>Dia Entrega:</td>
+						<td>
+							<input type="text" name="" id="txt-dia-entrega" class="form-control">
+						</td>
+
+					</tr>
+					<tr>
+						<td>Extras:</td>
+						<td>
+							<input type="text" name="" id="txt-extras" class="form-control">
+						</td>
+
+					</tr>
 				</table>
-				<div class="row" id="div-comprobacion-reserva">
+				<div class="row" id="div-reservaciones">
 					
-				</div>
-				<!--- FIN DEL FORMULARIO -->
-				      </div>
+				
+
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
 				        <button id="btn-guardar" type="button" class="btn btn-primary">Guardar</button>
@@ -132,14 +145,14 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title">Eliminar Carro</h4>
+				        <h4 class="modal-title">Eliminar reservacion</h4>
 				      </div>
 				      <div class="modal-body">
 				        <table class = "table table-striped table-hover">
 					<tr>
-						<td>Placa:</td>
+						<td>Codigo reservacion:</td>
 						<td>
-							<input type="text" name="marca" id="marca-automovil" class="form-control">
+							<input type="text" name="marca" id="codigo-reservacion" class="form-control">
 						</td>
 					</tr>
 					
@@ -158,7 +171,9 @@
 				<h2></h2>
 				
 			</div>
-			
+			<!--Listado de las aplicaciones-->
+	
+			</div>
 		</div>
 	</div>
 	<br><br>
@@ -166,7 +181,7 @@
 	
 	<script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/accion_add_carros.js"></script>
+    <script src="js/accion_reservacione.js"></script>
     <script type="text/javascript">
     	$("#btn-guardar").click(function(evento){
     		//En caso de que el boton sea un anchor <a>

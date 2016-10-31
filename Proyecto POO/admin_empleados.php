@@ -24,8 +24,8 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Flota <span class="sr-only">(current)</span></a></li>
-	        <li><a href="oficinas.php">Oficinas</a></li>
+	        <li class="active"><a href="gerente.php">Flota <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#">Oficinas</a></li>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clientes <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
@@ -33,7 +33,7 @@
 	            <li><a href="reservaciones.php">Reservaciones</a></li>
 	            <li role="separator" class="divider"></li>
 	            <li><a href="#">Estadisticas</a></li>
-
+	           
 	          </ul>
 	        </li>
 	      </ul>
@@ -48,7 +48,7 @@
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cuenta <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
-	            <li><a href="admin_empleados.php">Administrar Empleados</a></li>
+	            <li><a href="#">Administrar Empleados</a></li>
 	            <li><a href="#">Administrar Cuenta</a></li>
 	            <li role="separator" class="divider"></li>
 	            <li><a href="#">Cerrar Cesión</a></li>
@@ -64,60 +64,57 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-6">
-				 <button type="button"  class="btn btn-default" data-dismiss="modal" href="#" data-toggle="modal" data-target="#agregar">Agregar Auto</button>
-				 <button type="button" id="eliminarAuto" class="btn btn-default" data-dismiss="modal" href="#" data-toggle="modal" data-target="#eliminar">Eliminar Auto</button>
+				 <button type="button" class="btn btn-default" data-dismiss="modal" href="#" data-toggle="modal" data-target="#agregar">Agregar Empleado</button>
+				  <button type="button" class="btn btn-default" data-dismiss="modal" href="#" data-toggle="modal" data-target="#eliminar">Eliminar Empleado</button>
+				 <button type="button" class="btn btn-default" data-dismiss="modal" href="#" data-toggle="modal" data-target="#myModal">Estadisticas</button>
 
 				<div id="agregar" class="modal fade" tabindex="-1" role="dialog">
 				  <div class="modal-dialog" role="document">
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title">Agregar Carro</h4>
+				        <h4 class="modal-title">Agregar Empleado</h4>
+				       
 				      </div>
 				      <div class="modal-body">
 				        <table class = "table table-striped table-hover">
 					<tr>
-						<td>Marca:</td>
+						<td>Nombre Empleado:</td>
 						<td>
-							<input type="text" name="marca" id="txt-marca-auto" class="form-control">
+							<input type="text" name="marca" id="txt-nombre-empleado" class="form-control">
 						</td>
 					</tr>
 					<tr>
-						<td>Modelo:</td>
+						<td>Jefe:</td>
 						<td>
-							<input type="text" name="" id="txt-modelo" class="form-control">
+							<input type="text" name="" id="txt-jefe" class="form-control">
 						</td>
 					</tr>
 					<tr>
-						<td>Tipo Auto:</td>
+						<td>Sueldo Neto:</td>
 						<td>
-							<select name="" id="slc-tipo-auto" class="form-control">
+							<input type="text" name="" id="txt-sueldo" class="form-control">
+						</td>
+					</tr>
+					<tr>
+						<td>Numero Identidad:</td>
+						<td>
+							<input type="text" name="" id="txt-identidad" class="form-control">
+						</td>
+					</tr>
+					<tr>
+						<td>Cargo</td>
+						<td>
+							<select name="" id="slc-cargo" class="form-control">
 									
 							</select>
 						</td>
 					</tr>
-					<tr>
-						<td>Tipo transmision:</td>
-						<td>
-							<select name="" id="slc-tipo-trans" class="form-control">
-									
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>Placa:</td>
-						<td>
-							<input type="text" name="" id="txt-placa" class="form-control">
-						</td>
-
-					</tr>
+					<div class="row" id="div-comprobacion-empleados">
 					
 				</table>
-				<div class="row" id="div-comprobacion-reserva">
-					
-				</div>
 				<!--- FIN DEL FORMULARIO -->
-				      </div>
+				     
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
 				        <button id="btn-guardar" type="button" class="btn btn-primary">Guardar</button>
@@ -127,25 +124,26 @@
 				</div><!-- /.modal -->
 				<br>
 
+
+				
 				<div id="eliminar" class="modal fade" tabindex="-1" role="dialog">
 				  <div class="modal-dialog" role="document">
 				    <div class="modal-content">
 				      <div class="modal-header">
+				        
+
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title">Eliminar Carro</h4>
+				        <h4 class="modal-title">Eliminar empleado</h4>
 				      </div>
 				      <div class="modal-body">
 				        <table class = "table table-striped table-hover">
 					<tr>
-						<td>Placa:</td>
+						<td>Numero Identidad:</td>
 						<td>
-							<input type="text" name="marca" id="marca-automovil" class="form-control">
+							<input type="text" name="marca" id="identidad" class="form-control">
 						</td>
 					</tr>
-					
-					
-				</table>
-				<!--- FIN DEL FORMULARIO -->
+					</table>
 				      </div>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
@@ -154,10 +152,11 @@
 				    </div><!-- /.modal-content -->
 				  </div><!-- /.modal-dialog -->
 				</div><!-- /.modal -->				
-				<!--- INICIO DEL FORMULARIO -->
+			
 				<h2></h2>
 				
-			</div>
+
+				
 			
 		</div>
 	</div>
@@ -166,7 +165,7 @@
 	
 	<script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/accion_add_carros.js"></script>
+    <script src="js/acciones_empleados.js"></script>
     <script type="text/javascript">
     	$("#btn-guardar").click(function(evento){
     		//En caso de que el boton sea un anchor <a>

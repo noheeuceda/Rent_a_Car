@@ -5,6 +5,7 @@ class Sucursal{
 	private $nombre;
 	private $codigoSucursal;
 	private $direccion;
+	//telefono
 
 	public function __construct($nombre,
 			$codigoSucursal,
