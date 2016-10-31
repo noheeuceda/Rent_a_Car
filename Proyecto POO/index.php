@@ -132,7 +132,7 @@
                     <p class="lead">Seguridad, comodidad, elegancia y ajustado a tu presupesto<br> <a href="flota.php">Conocela</a>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/flota.jpg" alt="">
+                    <img class="img-responsive" src="img/flotaAutos.jpg" alt="">
                 </div>
             </div>
 
