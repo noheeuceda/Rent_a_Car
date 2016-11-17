@@ -3,6 +3,197 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+ 
+.navbar-default {
+    border-color: transparent;
+    background-color: #FF004E;
+}
+
+.navbar-default .navbar-brand {
+    font-family: Quicksand,"Helvetica Neue",Helvetica,Arial,cursive;
+    color: #FF004E;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #FF004E;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #FF004E;
+    background-color: #FF004E;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FF004E;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #FF004E;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #FF004E;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #FF004E;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #FF004E;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: #fff;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: #fff;
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+
+.navbar-inverse {
+    border-color: transparent;
+    background-color: transparent;
+    /*background-image:url("../img/thin_section_background.jpg");
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;*/
+}
+
+.navbar-inverse .navbar-brand {
+    font-family: Quicksand,"Helvetica Neue",Helvetica,Arial,cursive;
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:active,
+.navbar-inverse .navbar-brand.active {
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #FF004E;
+    background-color: #FF004E;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #FF004E;
+}
+
+.navbar-inverse .nav li a {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.navbar-inverse .nav li a:hover,
+.navbar-inverse .nav li a:focus {
+    outline: 0;
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #FF004E;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #FF004E;
+}
+
+@media(min-width:768px) {
+    .navbar-inverse {
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-inverse .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-inverse .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-inverse.navbar-shrink {
+        padding: 10px 0;
+        background-color: #a30056;
+    }
+
+    .navbar-inverse.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: #FFF;
+}
 
 body,
 html 
@@ -34,15 +225,15 @@ h6 {
 .intro-header {
     padding-top: 5px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 5px;
-    text-align: left;
-    color: #f8f8f8;
-    background: url(../img/autos2.jpg) no-repeat ;
+    text-align: center;
+    color: #d6b2b2;
+    background: url(../img/Autos1.jpg) no-repeat ;
     background-size: cover;
 }
 
 .intro-message {
     position: left;
-    padding-top: 20%;
+    padding-top: 10%;
     padding-bottom: 20%;
 }
 
